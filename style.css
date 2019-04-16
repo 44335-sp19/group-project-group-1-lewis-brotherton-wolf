@@ -1,3 +1,4 @@
+
 .column{
     float: left;
     width: 33.33%;
@@ -9,4 +10,15 @@
     content: "";
     display: table;
     clear:both;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: dodgerblue;
+  padding: 20px;
+}
+.flex-container > div{
+    background-color: aliceblue;
+    padding: 20px;
 }
