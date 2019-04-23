@@ -1,4 +1,7 @@
 
+body{
+    position: relative;
+}
 .column{
     float: left;
     width: 33.33%;
@@ -23,6 +26,13 @@
     padding: 20px;
 }
 
+table {
+    width: 100%;
+}
+th{
+    width: 50%;
+    text-align: left;
+}
 .fa {
   padding: 20px;
   font-size: 30px;
