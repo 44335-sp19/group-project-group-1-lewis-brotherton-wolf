@@ -7,8 +7,47 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="style.css">
-</head>
+    
+    <script>    
+ $(document).ready(function(){
+  $(".btn1").click(function(){
+      if($("#vis1").hasClass("btnText"))
+      {
+          $("#vis1").removeClass("btnText");
+      }
+      else
+      {
+          $("#vis1").addClass("btnText");
+      }
+  });
 
+     
+  $(".btn2").click(function(){
+      if($("#vis2").hasClass("btnText"))
+      {
+          $("#vis2").removeClass("btnText");
+      }
+      else
+      {
+          $("#vis2").addClass("btnText");
+      }
+  });
+     
+     
+});
+    </script>
+    
+    <style>
+
+        footer{
+            text-align: center;
+        }
+        .btnText{
+            display: none;
+        }
+    </style>
+    
+</head>
 <!--Navigation Bar: Three sections-->
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -16,42 +55,37 @@
       <a class="navbar-brand" href="home.html">Group 1</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">IDM: Computer Science</a></li>
-      <li><a href="#">IDM: Visual Imaging</a></li>
-      <li><a href="#">IDM: New Media</a></li>
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="idm-cs.html">IDM: Computer Science</a></li>
+      <li><a href="idm-vi.html">IDM: Visual Imaging</a></li>
+      <li><a href="idm-nm.html">IDM: New Media</a></li>
       </ul>
     </div> 
 </nav>
 
 <body>
-    
-</body>
-
-
-
-
-
-
-<footer>
-
-<!--
-    <div class="row">
-    <div class="column"><p>Contact Adalida Lewis: <a href="mailto:adalidalewis@gmail.com"></a></p></div>
-    <div class="column"><p>Contact Adalida Lewis: <a href="mailto:adalidalewis@gmail.com"></a></p></div>
-    <div class="column"><p>Contact Adalida Lewis: <a href="mailto:adalidalewis@gmail.com"></a></p></div>
-    </div>
--->
-
-    <div class="row">
-  <div class="column text-center">Contact Adalida Lewis: <a href="mailto:adalidalewis@gmail.com">adalidalewis@gmail.com</a></div>
-  <div class="column text-center">Contact Adalida Lewis: <a href="mailto:adalidalewis@gmail.com">adalidalewis@gmail.com</a></div>
-  <div class="column text-center">Contact Adalida Lewis: <a href="mailto:adalidalewis@gmail.com">adalidalewis@gmail.com</a></div>
+<!--Button row-->
+<button class="btn1">About Me</button>
+<button class="btn2">Education</button>
+<button class="btn3">Skills</button>
+<button class="btn4">Experience</button>
+<button class="btn5">Organizations</button>
+<button class="btn6">Projects</button>
+   
+<!--About Me Info-->
+<div id="vis1" class="btnText">
+<p>Information about me</p>
 </div>
     
-    
-    
-    
+<!--About Me Info-->
+<div id="vis2" class="btnText">
+<p>Education about me</p>
+</div>
+
+</body>
+
+<footer> 
+  <div>Contact Adalida Lewis: <a href="mailto:adalidalewis@gmail.com">adalidalewis@gmail.com</a></div>
 </footer>
 
 </html>
