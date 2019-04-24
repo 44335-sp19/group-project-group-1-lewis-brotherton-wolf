@@ -22,7 +22,7 @@
   });
 
      
-  $(".btn2").click(function(){
+    $(".btn2").click(function(){
       if($("#vis2").hasClass("btnText"))
       {
           $("#vis2").removeClass("btnText");
@@ -33,6 +33,49 @@
       }
   });
      
+     $(".btn3").click(function(){
+         if($("#vis3").hasClass("btnText"))
+            {
+                $("#vis3").removeClass("btnText");
+            }
+         else
+         {
+             $("#vis3").addClass("btnText");
+         }
+  });
+     
+     $(".btn4").click(function(){
+         if($("#vis4").hasClass("btnText"))
+            {
+                $("#vis4").removeClass("btnText");
+            }
+         else
+         {
+             $("#vis4").addClass("btnText");
+         }
+  });
+
+     $(".btn5").click(function(){
+         if($("#vis5").hasClass("btnText"))
+            {
+                $("#vis5").removeClass("btnText");
+            }
+         else
+         {
+             $("#vis5").addClass("btnText");
+         }
+  });
+
+     $(".btn6").click(function(){
+         if($("#vis6").hasClass("btnText"))
+            {
+                $("#vis6").removeClass("btnText");
+            }
+         else
+         {
+             $("#vis6").addClass("btnText");
+         }
+  });
      
 });
     </script>
@@ -44,6 +87,13 @@
         }
         .btnText{
             display: none;
+        }
+        .jumbotron {
+            background-image: url(https://media.giphy.com/media/xT9IgyaftFIcZNphcI/giphy.gif);
+            background-size: cover;
+            color: aliceblue;
+            text-align: center;
+            
         }
     </style>
     
@@ -64,6 +114,11 @@
 </nav>
 
 <body>
+    
+<div class="jumbotron">
+    <h2>Interactive Digital Media : Computer Science</h2>
+    </div>
+
 <!--Button row-->
 <button class="btn1">About Me</button>
 <button class="btn2">Education</button>
@@ -77,13 +132,44 @@
 <p>Information about me</p>
 </div>
     
-<!--About Me Info-->
+<!--Education Info-->
 <div id="vis2" class="btnText">
 <p>Education about me</p>
 </div>
+    
+<!--Skills Info-->
+<div id="vis3" class="btnText">
+<p>Skills I have</p>
+</div>
+
+<!--Experience Info-->
+<div id="vis4" class="btnText">
+<p>Exerience I have</p>
+</div>
+
+<!--Organizations Info-->
+<div id="vis5" class="btnText">
+<p>Organizations I'm in</p>
+</div>
+
+<!--Projects Info-->
+<div id="vis6" class="btnText">
+<p>Projects I have</p>
+</div>
+
 
 </body>
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 <footer> 
   <div>Contact Adalida Lewis: <a href="mailto:adalidalewis@gmail.com">adalidalewis@gmail.com</a></div>
 </footer>
