@@ -9,6 +9,12 @@ body{
     height: 300px;
     
 }
+
+h1 {
+    text-align: center;
+    
+}
+
 .row:after{
     content: "";
     display: table;
@@ -18,7 +24,7 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: dodgerblue;
+  
   padding: 20px;
 }
 .flex-container > div{
@@ -28,11 +34,28 @@ body{
 
 table {
     width: 100%;
+    padding: 20px;
 }
-th{
+td {
+    padding: 50px;
     width: 50%;
+    text-align: center;
+    padding-bottom: 70px;
+}
+li, ul, p {
     text-align: left;
 }
+
+#myTable {
+background-color: antiquewhite;
+    height: 100%;
+}
+
+#tableTwo {
+    background-color: #FA8072;
+    height:100%;
+}
+
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -42,7 +65,7 @@ th{
   margin: 5px 2px;
 }
 .fa-instagram {
-  background: #ffc0cb;
+  background: antiquewhite;
   color: white;
 }
 .fa-linkedin {

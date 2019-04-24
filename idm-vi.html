@@ -7,7 +7,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="style.css">
-
+    <style>
+        #navscrollspy a{
+            position: fixed;
+        }
+    </style>
 </head>
 
 <!--Navigation Bar-->
@@ -30,7 +34,7 @@
 
 <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->    
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">    
-  <class= "navbar-nav">
+  <class= "navscrollspy">
       <a href="#section1"><button type="button" class="btn">IDM: Visual Imaging</button></a>      
       <a href="#section2"><button type="button" class="btn">Experience</button></a>
       <a href="#section3"><button type="button" class="btn">Skills</button></a>
@@ -42,94 +46,139 @@
     </nav>
     
 <!-- Section 1 -->
-    <div id="section1" class="row">
-        <div class="column"><h1>What is Interactive Digital Media: Visual Imaging?</h1></div>
-  <div class="column"> <p>The digital media major at Northwest is an interdisciplinary program involving an emphasis in computer science, art or mass media. Courses offer a cross-section of skills in design as well as written and visual communication. The major produces graduates who are proficient in art, photography, design, communication, computer programming and legal or ethical considerations as they relate to media.</p>
-<p>Students majoring in digital media with an emphasis in visual imaging learn to create computer programs and the visual appearance of internet graphics as well as enhance experience of the web users.</p></div>
+    <table>
+    <div id="section1">
+        
+    <table id="myTable">
+        <tr>
+            <td><h2>What is Interactive Digital Media?</h2></td>
+            <td><p>The digital media major at Northwest is an interdisciplinary program involving an emphasis in computer science, art or mass media. Courses offer a cross-section of skills in design as well as written and visual communication. The major produces graduates who are proficient in art, photography, design, communication, computer programming and legal or ethical considerations as they relate to media.</p>
+<p>Students majoring in digital media with an emphasis in visual imaging learn to create computer programs and the visual appearance of internet graphics as well as enhance experience of the web users.</p>
+</td>
+        </tr>
+        
+        </table>
 
 
 <!-- Section 2 -->
-<div id="section2" class="row">
+<div id="section2">
     <h1>Experience</h1>
-    <div class="column"><h1>Buffalo Wild Wings</h1></div>
-    <div class="column"><ul>Server</ul></div>
-    <li>Resolve customer questions and make genuine recommendations in order to achieve customer satisfaction.</li>
+    <table id="tableTwo">
+            <tr> 
+                <td><h2>Buffalo Wild Wings</h2></td>
+                <td><ul><h3>Server</h3><br><li>Resolve customer questions and make genuine recommendations in order to achieve customer satisfaction.</li>
     <li>Used effective communication skills in order to facilitate information between customers and coworkers.</li>
-    <li>Manage closing duties including restocking items, cleaning, and janitorial duties.</li>
-<h2>Student Success Center</h2>
-    <ul>Office Assistant</ul>
-    <li></li>
-<h2>Alumni Relations</h2>
-    <ul>Cat Caller</ul>
-    <li>Selected as one of eight student representatives to call alumni for fundraising purposes.</li>
+            <li>Manage closing duties including restocking items, cleaning, and janitorial duties.</li></ul></td>    
+        </tr>
+    </table>
+    <table id="myTable">
+       <tr>
+           <td><h2>Student Success Center</h2></td>
+           <td><ul><h3>Office Assistant</h3><br><li>Put all my duties here in a list</li>
+               <li>More duties</li>
+               <li>More duties</li>
+               </ul></td>        
+        </tr>     
+    </table>
+    <table id="tableTwo">
+    <tr>
+        <td><h2>Alumni Relations</h2></td>
+        <td><ul><h3>Cat Caller</h3><br>
+             <li>Selected as one of eight student representatives to call alumni for fundraising purposes.</li>
     <li>Completed six days of training that taught how to communicate in a professional manner, work the phone system, and effectively process donations.</li>
     <li>Worked four days a week in three hour shift intervals.</li>
     <li>Called alumni and updated personal information, informed about recent events and activities on campus, and made them feel like and essential part of campus.</li>
-</div>
+            </ul></td>        
+        </tr>
+    </table>
+
     
 <!-- Section 3 -->
 <div id="section3">
-  <h1>Skills</h1>
- <p>Microsoft Suites, Adobe InDesign, Adobe Photoshop, Adobe Illistrator, Wireframing, HTML, CSS, JavaScript, jQuery, Slack</p>
-</div>
-
+    <h1>Skills</h1>
+    <table id="myTable">
+    <tr>
+        <td><h2>Skills</h2></td>
+        <td><li>Microsoft Suites</li><br><li>Adobe InDesign</li><br><li>Adobe Photoshop</li><br><li>Adobe Illistrator</li><br><li>Adobe Spark</li><br><li>Wireframing</li><br><li>HTML</li><br><li>CSS</li><br><li>JavaScript</li><br><li>jQuery</li><br><li>Slack</li></td>
+        </tr>
+    </table>
+ 
     <!-- Section 4 -->
 <div id="section4">
-  <h1>Education</h1>
-    <h2><ul>Northwest Missouri State University</ul></h2>
-    <li>Bachelor in science of Interactive Digital Media: Visual Imaging</li>
-    <li>Expected graduation date: May 2020</li>
-    </div>    
+    <h1>Education</h1>
+    
+    <table id="tableTwo">
+    <tr>
+        <td><h2>Northwest Missouri State University</h2></td>
+        <td>800 University Drive Maryville, MO 64468<br>Bachelor in Science of Interactive Digital Media: Visual Imaging<br>Expected Graduation Date: May 2020</td>
+        </tr>
+    </table>
        <!-- Section 5 -->
 <div id="section5">
   <h1>References</h1>
- <p>This is where I am going to put all of my references.</p>
-</div>
+    <table id="myTable">
+    <tr>
+        <td><h2>Jen Pitts</h2><br></td>
+        <td>Supervisor at the Student Success Center<br>660.541.4392<br>jpitts@nwmissouri.edu</td>
+        </tr>
+    </table>
+<table id="tableTwo">
+    <tr>
+        <td><h2>Starr Foote</h2><br></td>
+    <td>Supervisor at Buffalo Wild Wings<br>712.366.0067</td>
+    </tr>
+    </table>
            <!-- Section 6 -->
 <div id="section6">
   <h1>Projects</h1>
-    <h2><ul>Client Website</ul></h2>
-    <li>Worked with a team of two other classmates to redesign an existing website for A & M Squared Incorporation.</li>
+    <table id="myTable">
+        <tr>
+        <td><h2>Client Website</h2></td>
+    <td><ul><li>Worked with a team of two other classmates to redesign an existing website for A & M Squared Incorporation.</li>
     <li>Redesigned by updating current information, improving sites SEO, and adding moderate improvements to market toward the target audience.</li>
     <li>Used InVision to create a prototype.</li>
     <li>Conducted usability tests throughout the creation of the website.</li>
     <li>Effectively communicated with the client to cater to the wants and needs for the website.</li>
-    <li>Skills used: Adobe InDesign, Adobe Photoshop, sitemapping, wireframing, Cloud 9, HTML, CSS, usability testing</li>
+        <li>Skills used: Adobe InDesign, Adobe Photoshop, sitemapping, wireframing, Cloud 9, HTML, CSS, usability testing</li></ul></td>
+        </tr>
+    </table>
  
 </div>
            <!-- Section 7 -->
 <div id="section7">
   <h1>Designs</h1>
- <p>This is where I am going to put all of my designs. I will put them in a carousel.</p>
-</div>
+<p>Carousel goes here</p>
            <!-- Section 8 -->
 <div id="section8">
   <h1>About Allie</h1>
- <p>This is where I am going to put a picture of myself, information, and a contact form.</p>
-</div>
+    <table id="tableTwo">
+    <tr>
+        <td><img src="alliepic.jpg" class="rounded-circle" alt="Picture of Allie"></td>
+        <td><p>Hello, I'm Allie! I am a twenty-one year old Junior at Northwest Missouri State University. I'm an Interactive Digital Media: Visual Imaging major aspiring to become a User Interface Designer after I graduate in May 2020. I love running, hiking, reading a good book, and taking care of my many house plants.</p></td>
+        </tr>
+    </table>
+    <h1>Lets get in touch!</h1>
+    <p>Make a contact from here</p>
+
+        </div>
 
 </body>
 
 
 <footer>
-    
-    <div class="row">
-        <div class="column text-center">712.435.9515<br><a href="s527557@nwmissouri.edu">S527557@nwmissouri.edu</a></div>
-  <div class="column text-center">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        </div>
-    </div>
-
-<!-- social media icons -->
+    <table id="tableThree">
+    <tr>
+        <td>712.435.9515<br>S527557@nwmissouri.edu</td>
+        <td><!-- social media icons -->
 <div>
 <a href="https://www.facebook.com/allie.wolf.581" class="fa fa-facebook"></a>
 <a href="https://twitter.com/_ALLIEWOLF" class="fa fa-twitter"></a>
 <a href="https://www.instagram.com/allie_wolf/" class="fa fa-instagram"></a>
 <a href="https://www.linkedin.com/in/allie-wolf-6a5625132/" class="fa fa-linkedin"></a>
-</div>
-    
-    
-    
+</div></td>
+        </tr>
+    </table>
+       
     
 </footer>
 
