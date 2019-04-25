@@ -7,9 +7,22 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="style.css">
+    <style>
+        #navscrollspy a{ position: fixed;}
+        
+         table { width: 80%;
+                 padding: 10px; }
+        
+         td { padding: 15px;
+              width: 50%;
+              text-align: center;
+              padding-bottom: 70px; }
+        
+        h1 {text-align: center;}
+    </style>
 </head>
 
-<!--Navigation Bar: Three sections-->
+<!--Navigation Bar-->
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -23,36 +36,35 @@
       </ul>
     </div> 
 </nav>
-    
-    
-<!-- The scrollable area -->
+        
+    <!-- The scrollable area -->
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-     
 
-<!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <ul class="nav navbar-nav">
-    <li><a href="#main">Main</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#references">References</a></li>
-    <li><a href="#designs">Designs</a></li>
-    <li><a href="#papers">Papers</a></li> 
-    <li><a href="#about">About Me</a></li>
-    <li><a href="#contact">Contact</a></li>  
-</nav>
+<!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->    
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">    
+  <class= "navscrollspy">
+      <a href="#intro"><button type="button" class="btn">IDM: New Media</button></a>      
+      <a href="#experience"><button type="button" class="btn">Experience</button></a>
+      <a href="#skills"><button type="button" class="btn">Skills</button></a>
+      <a href="#education"><button type="button" class="btn">Education</button></a>
+      <a href="#references"><button type="button" class="btn">References</button></a>
+      <a href="#papers"><button type="button" class="btn">Papers</button></a>
+      <a href="#about"><button type="button" class="btn">About Me</button></a>
+      <a href="#contact"><button type="button" class="btn">Contact</button></a>
+    </nav>
+    
+<!-- Intro -->
+    <table>
+    <div id="intro">
+        
 
-<!-- Main -->
-<div id="main">
-  <h1>Main</h1>
-  <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-</div>
 
 <!-- Experience -->
 <div id="experience">
-  <h1>Experience</h1>
-    <p>Project Manager</p>
+    <h1>Experience</h1>
+    <table>
+    <tr>
+          <td><p>Project Manager</p>
     <p>Knacktive, January 2019 - Present</p>
     <ul>
         <li>Organize and manage the team's schedule, budget, and overall project completion</li>
@@ -61,8 +73,9 @@
         <li>Ensure effective communications and relationships between team members are maintained</li>
         <li>Set up team activities</li>
     </ul>
+        </td>
     
-    <p>Marketing Intern</p>
+    <td><p>Marketing Intern</p>
     <p>SJC Marketing, May 2018 - August 2018</p>
     <ul>
         <li>Created promotion plans</li>
@@ -72,8 +85,8 @@
         <li>Created spreadsheets</li>
         <li>Researched information for clients</li>
     </ul> 
-    
-      <p>Sales Associate</p>
+        </td>
+     <td><p>Sales Associate</p>
     <p>Brown's Shoe Fit Co., June 2017 - Present</p>
     <ul>
         <li>Support owner in daily operations of the store</li>
@@ -83,26 +96,26 @@
         <li>Schedule events for the promotional offers</li>
         <li>Help customers find shoes that fulfill their needs and make them happy</li>
     </ul>   
+        </td>
+    </tr>
+    </table>
     
-</div>
-    
- <!-- Skills -->
+<!-- Skills -->
 <div id="skills">
-  <h1>Skills</h1>
-  <ul>
-    <li>Microsoft Office</li>
-    <li>Google Apps</li>
-    <li>Basecamp</li>
-    <li>Slack</li>
-    <li>HTML/CSS</li>
-    <li>Adobe Suite</li>
-    </ul>
-</div>   
-    
-<!-- Education -->
+    <h1>Skills</h1>
+        <ul>
+            <li>Microsoft Office</li>
+            <li>Google Apps</li>
+            <li>Basecamp</li>
+            <li>Slack</li>
+            <li>HTML/CSS</li>
+            <li>Adobe Suite</li>
+        </ul>
+ 
+    <!-- Education -->
 <div id="education">
-  <h1>Education</h1>
-  <p>Northwest Missouri State University, May 2019</p>
+    <h1>Education</h1>
+      <p>Northwest Missouri State University, May 2019</p>
     <p>Interactive Digital Media: New Media</p>
     <p>Related Courses:</p>
         <ul>
@@ -113,12 +126,11 @@
             <li>Professional Media Writing</li>
             <li>Knacktive; student run agency course</li>
     </ul>
-</div>    
     
-<!-- References -->
+       <!-- References -->
 <div id="references">
   <h1>References</h1>
-  <ul>
+   <ul>
     <li>Anna West</li>
     <p>Vice President of Operations at SJC Marketing <br>816-390-7706<br>anna@sjc.marketing</p>
   </ul>
@@ -130,43 +142,49 @@
     <li>Jasmine Walker</li>
     <p>Owner of Brown's Shoe Fit Co. <br>660-582-4641<br>maryville@brownsshoefitco.com</p>
   </ul> 
-</div>      
-    
-<!-- Papers -->
+
+           <!-- Papers -->
 <div id="papers">
   <h1>Papers</h1>
     <a href="https://www.slideshare.net/PaigeBrotherton/instagram-story-how-to">
-<img border="0" alt="Instagram How To" src="images/instagramscreenshot.png" width="300" height="300">
-</a>
-</div> 
-    
-<!-- About Me -->
+        <img border="0" alt="Instagram How To" src="images/instagramscreenshot.png" width="300" height="300">
+        </a>
+
+           <!-- About Me -->
 <div id="about">
-  <h1>Meet Paige!</h1>
-  <p>Hi! I'm Paige! I am a twenty-three year old senior at Northwest Missouri State University. I'm an Interactive Digital Media: New Media major hoping to become a Project Manager in the Advertising industry after I graduate in May 2019. I have a sweet corgi puppy named Porkchop who LOVES to be crazy and wild at all times.</p>
-</div>    
+  <h1>Meet Paige</h1>
+   <p>Hi! I'm Paige! I am a twenty-three year old senior at Northwest Missouri State University. I'm an Interactive Digital Media: New Media major hoping to become a Project Manager in the Advertising industry after I graduate in May 2019. I have a sweet corgi puppy named Porkchop who LOVES to be crazy and wild at all times.</p>
+
+        </div>
     
-<!-- Contact -->
+           <!-- Contact -->
 <div id="contact">
-  <h1>Contact</h1>
-  <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-</div>    
-    
-    
-    
+  <h1>Contact Me!</h1>
+    <p>Feel free to reach out if you have questions regarding my website or about me in general.</p>
+        </div>
+    <div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
 </body>
 
 
-
 <footer>
-
-    <div class="row">
-  <div class="column text-center">Contact Paige Brotherton: <a href="mailto:brothertonp3@gmail.com">brothertonp3@gmail.com</a></div>
-
-</div>
-    
-    
-    
+     <div class="row">
+        <div class="column text-center"><p>Contact Paige Brotherton: <a href="mailto:brothertonp3@gmail.com">brothertonp3@gmail.com</a></p></div>  
+    </div>
     
 </footer>
 
