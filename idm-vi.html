@@ -10,17 +10,18 @@
     <style>
         #navScrollSpy a{
             position: fixed;
+            color: black;
         }
         #myTable {
-            background-color: antiquewhite;
-            height: 80%;
+            background-color: #d3d3d3;
+            height: 60%;
 }
 
         #tableTwo {
-            background-color: #FA8072;
-            height:80%;
+            background-color: antiquewhite;
+            height:60%;
 }
-        h1 {
+        h1, h3 {
             text-align: center;
             color: black;
     
@@ -51,6 +52,25 @@
         li, ul, p {
             text-align: left;
 }
+        input[type=submit] {
+            background-color: #d3d3d3;
+            color: black;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+}
+
+        input[type=submit]:hover {
+            background-color: #a9a9a9;
+}
+
+        .container {
+            border-radius: 5px;
+            background-color: antiquewhite;
+            padding: 20px;
+}
+
 
         .fa {
             padding: 20px;
@@ -109,16 +129,15 @@
       <a href="#section3"><button type="button" class="btn">Skills</button></a>
       <a href="#section4"><button type="button" class="btn">Education</button></a>
       <a href="#section5"><button type="button" class="btn">References</button></a>
-      <a href="#section6"><button type="button" class="btn">Projects</button></a>
-      <a href="#section7"><button type="button" class="btn">Designs</button></a>
-          <a href="#section8"><button type="button" class="btn">About Allie</button></a></div>
+      <a href="#section6"><button type="button" class="btn">Projects & Designs</button></a>
+        <a href="#section8"><button type="button" class="btn">About Allie</button></a></div>
     </nav>
     
 <!-- Section 1 -->
     <table>
     <div id="section1">
         
-    <table id="myTable">
+    <table id="tableTwo">
         <tr>
             <td><h2>What is Interactive Digital Media?</h2></td>
             <td><p>The digital media major at Northwest is an interdisciplinary program involving an emphasis in computer science, art or mass media. Courses offer a cross-section of skills in design as well as written and visual communication. The major produces graduates who are proficient in art, photography, design, communication, computer programming and legal or ethical considerations as they relate to media.</p>
@@ -139,8 +158,6 @@
     <li>Used effective communication skills in order to facilitate information between customers and coworkers.</li>
             <li>Manage closing duties including restocking items, cleaning, and janitorial duties.</li></ul></td>    
         </tr>
-    </table>
-    <table id="myTable">
        <tr>
            <td><h2>Student Success Center</h2></td>
            <td><ul><h3>Office Assistant</h3><br><li>Put all my duties here in a list</li>
@@ -148,8 +165,6 @@
                <li>More duties</li>
                </ul></td>        
         </tr>     
-    </table>
-    <table id="tableTwo">
     <tr>
         <td><h2>Alumni Relations</h2></td>
         <td><ul><h3>Cat Caller</h3><br>
@@ -160,12 +175,11 @@
             </ul></td>        
         </tr>
     </table>
-
     
 <!-- Section 3 -->
 <div id="section3">
     <h1 class="stonewall">Skills</h1>
-    <table id="myTable">
+    <table id="tableTwo">
     <tr>
         <td><h2>Skills</h2></td>
         <td><li>Microsoft Suites</li><br><li>Adobe InDesign</li><br><li>Adobe Photoshop</li><br><li>Adobe Illistrator</li><br><li>Adobe Spark</li><br><li>Wireframing</li><br><li>HTML</li><br><li>CSS</li><br><li>JavaScript</li><br><li>jQuery</li><br><li>Slack</li><br><li>GitHub</li><br><li>Cloud 9</li></td>
@@ -185,13 +199,11 @@
        <!-- Section 5 -->
 <div id="section5">
   <h1 class="stonewall">References</h1>
-    <table id="myTable">
+    <table id="tableTwo">
     <tr>
         <td><h2>Jen Pitts</h2><br></td>
         <td>Supervisor at the Student Success Center<br>660.541.4392<br>jpitts@nwmissouri.edu</td>
         </tr>
-    </table>
-<table id="tableTwo">
     <tr>
         <td><h2>Starr Foote</h2><br></td>
     <td>Supervisor at Buffalo Wild Wings<br>712.366.0067</td>
@@ -199,8 +211,8 @@
     </table>
            <!-- Section 6 -->
 <div id="section6">
-  <h1 class="stonewall">Projects</h1>
-    <table id="myTable">
+  <h1 class="stonewall">Projects & Designs</h1>
+    <table id="tableTwo">
         <tr>
         <td><h2>Client Website</h2></td>
     <td><ul><li>Worked with a team of two other classmates to redesign an existing website for A & M Squared Incorporation.</li>
@@ -213,13 +225,10 @@
         <td><ul><li>Was chosen out of 785 undergraduate greek life members to create the Bi-Annual Greek Alumni Magazine.</li>
             <li>Partnered up with one other memember to write and edit information about each fraternity and sorority on campus. </li>
             <li>Used Adobe Spark to form the magazine and Adobe InDesign to create all the graphics included among the pages.</li></ul></td></tr>
+    <tr><td>Carousel goes here</td></tr>
     </table>
- 
 </div>
-           <!-- Section 7 -->
-<div id="section7">
-  <h1 class="stonewall">Designs</h1>
-<p>Carousel goes here</p>
+  
            <!-- Section 8 -->
 <div id="section8">
   <h1 class="stonewall">About Allie</h1>
@@ -228,11 +237,28 @@
         <td><img src="images/alliepic.jpg" class="rounded-circle" alt="Picture of Allie"></td>
         <td><p>Hello, I'm Allie! I am a twenty-one year old Junior at Northwest Missouri State University. I'm an Interactive Digital Media: Visual Imaging major aspiring to become a User Interface Designer after I graduate in May 2020. I love running, hiking, reading a good book, and taking care of my many house plants.</p></td>
         </tr>
-    </table>
+    </table></div>
     <h1 class="stonewall">Lets get in touch!</h1>
-    <p>Make a contact from here</p>
-
+            <!-- Contact -->
+<div id="contact">
+    <h3>Feel free to reach out if you have any questions, comments, or want to chat!</h3>
         </div>
+    <div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="First name">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Last name">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Questions, comments, and concerns go here" style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
 
 </body>
 
