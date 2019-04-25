@@ -10,7 +10,6 @@
     <style>
         #navScrollSpy a{
             position: fixed;
-            color: black;
         }
         #myTable {
             background-color: #d3d3d3;
@@ -24,8 +23,13 @@
         h1, h3 {
             text-align: center;
             color: black;
+            margin: 0px;
     
 }
+        button {
+            color: black;
+            background-color: #d3d3d3;
+        }
         .jumbotron {
             background-image: url(stone.jpg);
             background-size: cover;
@@ -35,9 +39,9 @@
             background-image: url(stone.jpg);
             background-size: cover;
             text-align: center;
-            height: 20%;
+            height: 15%;
             color: white;
-            padding-top: 40px;
+            padding-top: 35px;
         }
         table {
             width: 100%;
@@ -99,7 +103,27 @@
         .fa:hover {
             opacity: 0.7;
 }
+        <!-- Style for JavaScript form -->
+        
+        body {
+            background-color: antiquewhite;
+        }
+			#contact {
+				margin: auto;
+				width: 50%;
+				border: solid 16px antiquewhite;
+				text-align: center;
+				padding: 10px;
+				border-radius: 50px;
+			}
+        
+        <!-- Time at the bottom of site -->
+        
+        time {
+            
+        }
     </style>
+    
 </head>
 
 <!--Navigation Bar-->
@@ -119,10 +143,12 @@
         
     <!-- The scrollable area -->
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    
+    
 
 <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->    
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">    
-  <class= "navScrollSpy">
+    <h3 class= "navScrollSpy"></h3>
       <div class="jumbotron">
       <a href="#section1"><button type="button" class="btn">IDM: Visual Imaging</button></a>      
       <a href="#section2"><button type="button" class="btn">Experience</button></a>
@@ -150,7 +176,7 @@
 
 <!-- Section 2 -->
 <div id="section2">
-    <h1>Experience</h1>
+    <h1 class="stonewall">Experience</h1>
     <table id="tableTwo">
             <tr> 
                 <td><h2>Buffalo Wild Wings</h2></td>
@@ -234,38 +260,81 @@
   <h1 class="stonewall">About Allie</h1>
     <table id="tableTwo">
     <tr>
-        <td><img src="images/alliepic.jpg" class="rounded-circle" alt="Picture of Allie"></td>
         <td><p>Hello, I'm Allie! I am a twenty-one year old Junior at Northwest Missouri State University. I'm an Interactive Digital Media: Visual Imaging major aspiring to become a User Interface Designer after I graduate in May 2020. I love running, hiking, reading a good book, and taking care of my many house plants.</p></td>
+        <td><img src="images/alliepic.jpg" class="rounded-circle" alt="Picture of Allie"></td>
         </tr>
     </table></div>
     <h1 class="stonewall">Lets get in touch!</h1>
-            <!-- Contact -->
-<div id="contact">
-    <h3>Feel free to reach out if you have any questions, comments, or want to chat!</h3>
-        </div>
-    <div class="container">
-  <form action="action_page.php">
-
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="First name">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Last name">
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Questions, comments, and concerns go here" style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
-</div>
-
+    
+    <!--JavaScript Contact Form-->
+     <h3>Feel free to reach out if you have any questions, comments, concerns or want to make an appointment!</h3>
+    <p>Add a calendar button here</p>
+    <div id = "contact">
+			<form>
+				<h3>First Name </h3> <input id="firstName" type="text" name="firstname">
+				<h3>Last Name </h3> <input id="lastName" type="text" name="lastname">
+				<h3>Question, Comments, Concerns, or Make an Appointment! </h3> <input id="comments" type=" " name="lastname">
+				<br>
+				<br>
+				<br>
+				<button id="submit">Submit</button>
+				<button id="reset">Reset</button>
+			</form>
+		</div>
+		<script type="text/javascript">
+            var firstName = document.getElementById("firstName");
+			var lastName = document.getElementById("lastName");
+			var comments = document.getElementById("comments");
+            
+            document.getElementById("firstName").onfocus = function(){
+				this.style.backgroundColor = "#d3d3d3";
+			}
+            document.getElementById("firstName").onblur = function(){
+				this.style.backgroundColor = "#a9a9a9";
+				this.style.textTransform = "uppercase"
+			}
+            document.getElementById("lastName").onfocus = function(){
+				this.style.backgroundColor = "#d3d3d3";
+			}
+            document.getElementById("lastName").onblur = function(){
+				this.style.backgroundColor = "#a9a9a9";
+				this.style.textTransform = "uppercase"
+			}
+            
+            document.getElementById("comments").onfocus = function(){
+				this.style.backgroundColor = "#d3d3d3";
+			}
+            document.getElementById("comments").onblur = function(){
+				this.style.backgroundColor = "#a9a9a9";
+			}
+            document.getElementById("submit").onclick = function(){
+				alert("Your form has been submitted");
+				firstName.value = "";
+				lastName.value = "";
+				comments.value = "";
+			}
+            document.getElementById("reset").onclick = function(){
+				firstName.value = "";
+				lastName.value = "";
+				comments.value = "";
+			}
+    </script>
+    <br>
+            
+            
+            <!-- Time and Date -->
+    </div>
+    <p id="time"></p>
+    <script>
+        var d = new Date(); document.getElementById("demo").innerHTML = d;
+    </script>
 </body>
 
 
 <footer>
     <table id="tableThree">
     <tr>
+
         <td>712.435.9515<br>S527557@nwmissouri.edu</td>
         <td><!-- social media icons -->
 <div>
