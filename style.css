@@ -10,10 +10,6 @@ body{
     
 }
 
-h1 {
-    text-align: center;
-    
-}
 
 .row:after{
     content: "";
@@ -46,15 +42,6 @@ li, ul, p {
     text-align: left;
 }
 
-#myTable {
-background-color: antiquewhite;
-    height: 100%;
-}
-
-#tableTwo {
-    background-color: #FA8072;
-    height:100%;
-}
 
 .fa {
   padding: 20px;
