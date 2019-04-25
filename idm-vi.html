@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
     <style>
         #navScrollSpy a{
@@ -34,6 +35,7 @@
             background-image: url(stone.jpg);
             background-size: cover;
             text-align: center;
+            margin-bottom: 0!important;
         }
         .stonewall {
             background-image: url(stone.jpg);
@@ -42,6 +44,12 @@
             height: 15%;
             color: white;
             padding-top: 35px;
+        }
+        .headings {
+            padding: 20px;
+        }
+        .paragraph {
+            text-align: center;
         }
         table {
             width: 100%;
@@ -79,13 +87,13 @@
         .fa {
             padding: 20px;
             font-size: 30px;
-            width: 50px;
+            width: 100px;
             text-align: center;
             text-decoration: none;
-            margin: 5px 2px;
+            margin: 100px;
 }
         .fa-instagram {
-            background: antiquewhite;
+            background: #d3d3d3;
             color: white;
 }
         .fa-linkedin {
@@ -115,12 +123,11 @@
 				text-align: center;
 				padding: 10px;
 				border-radius: 50px;
+                background-color: #d3d3d3;
 			}
-        
-        <!-- Time at the bottom of site -->
-        
-        time {
-            
+                
+        .navbar {
+            margin-bottom: 0!important;
         }
     </style>
     
@@ -176,7 +183,7 @@
 
 <!-- Section 2 -->
 <div id="section2">
-    <h1 class="stonewall">Experience</h1>
+    <h1>Experience</h1>
     <table id="tableTwo">
             <tr> 
                 <td><h2>Buffalo Wild Wings</h2></td>
@@ -204,7 +211,7 @@
     
 <!-- Section 3 -->
 <div id="section3">
-    <h1 class="stonewall">Skills</h1>
+    <h1>Skills</h1>
     <table id="tableTwo">
     <tr>
         <td><h2>Skills</h2></td>
@@ -214,7 +221,7 @@
  
     <!-- Section 4 -->
 <div id="section4">
-    <h1 class="stonewall">Education</h1>
+    <h1>Education</h1>
     
     <table id="tableTwo">
     <tr>
@@ -224,7 +231,7 @@
     </table>
        <!-- Section 5 -->
 <div id="section5">
-  <h1 class="stonewall">References</h1>
+  <h1>References</h1>
     <table id="tableTwo">
     <tr>
         <td><h2>Jen Pitts</h2><br></td>
@@ -237,7 +244,7 @@
     </table>
            <!-- Section 6 -->
 <div id="section6">
-  <h1 class="stonewall">Projects & Designs</h1>
+  <h1>Projects & Designs</h1>
     <table id="tableTwo">
         <tr>
         <td><h2>Client Website</h2></td>
@@ -257,29 +264,28 @@
   
            <!-- Section 8 -->
 <div id="section8">
-  <h1 class="stonewall">About Allie</h1>
+  <h1>About Allie</h1>
     <table id="tableTwo">
     <tr>
         <td><p>Hello, I'm Allie! I am a twenty-one year old Junior at Northwest Missouri State University. I'm an Interactive Digital Media: Visual Imaging major aspiring to become a User Interface Designer after I graduate in May 2020. I love running, hiking, reading a good book, and taking care of my many house plants.</p></td>
         <td><img src="images/alliepic.jpg" class="rounded-circle" alt="Picture of Allie"></td>
         </tr>
     </table></div>
-    <h1 class="stonewall">Lets get in touch!</h1>
+    <h1>Lets get in touch!</h1><br>
     
     <!--JavaScript Contact Form-->
-     <h3>Feel free to reach out if you have any questions, comments, concerns or want to make an appointment!</h3>
-    <p>Add a calendar button here</p>
+    <p class="paragraph">Feel free to reach out if you have any questions, comments, concerns or want to make an appointment</p>
     <div id = "contact">
 			<form>
 				<h3>First Name </h3> <input id="firstName" type="text" name="firstname">
 				<h3>Last Name </h3> <input id="lastName" type="text" name="lastname">
-				<h3>Question, Comments, Concerns, or Make an Appointment! </h3> <input id="comments" type=" " name="lastname">
+				<h3>Question, Comments, Concerns, or Make an Appointment! </h3> <input id="comments" type="text" name="lastname">
 				<br>
 				<br>
 				<br>
 				<button id="submit">Submit</button>
 				<button id="reset">Reset</button>
-			</form>
+        </form>
 		</div>
 		<script type="text/javascript">
             var firstName = document.getElementById("firstName");
@@ -287,14 +293,14 @@
 			var comments = document.getElementById("comments");
             
             document.getElementById("firstName").onfocus = function(){
-				this.style.backgroundColor = "#d3d3d3";
+				this.style.backgroundColor = "#ffffff";
 			}
             document.getElementById("firstName").onblur = function(){
 				this.style.backgroundColor = "#a9a9a9";
 				this.style.textTransform = "uppercase"
 			}
             document.getElementById("lastName").onfocus = function(){
-				this.style.backgroundColor = "#d3d3d3";
+				this.style.backgroundColor = "#ffffff";
 			}
             document.getElementById("lastName").onblur = function(){
 				this.style.backgroundColor = "#a9a9a9";
@@ -302,7 +308,7 @@
 			}
             
             document.getElementById("comments").onfocus = function(){
-				this.style.backgroundColor = "#d3d3d3";
+				this.style.backgroundColor = "#ffffff";
 			}
             document.getElementById("comments").onblur = function(){
 				this.style.backgroundColor = "#a9a9a9";
@@ -317,31 +323,24 @@
 				firstName.value = "";
 				lastName.value = "";
 				comments.value = "";
-			}
+            }
     </script>
     <br>
             
-            
-            <!-- Time and Date -->
-    </div>
-    <p id="time"></p>
-    <script>
-        var d = new Date(); document.getElementById("demo").innerHTML = d;
-    </script>
 </body>
 
 
 <footer>
-    <table id="tableThree">
+    <table class= "stonewall">
     <tr>
 
         <td>712.435.9515<br>S527557@nwmissouri.edu</td>
         <td><!-- social media icons -->
 <div>
-<a href="https://www.facebook.com/allie.wolf.581" class="fa fa-facebook"></a>
-<a href="https://twitter.com/_ALLIEWOLF" class="fa fa-twitter"></a>
-<a href="https://www.instagram.com/allie_wolf/" class="fa fa-instagram"></a>
-<a href="https://www.linkedin.com/in/allie-wolf-6a5625132/" class="fa fa-linkedin"></a>
+<a href="https://www.facebook.com/allie.wolf.581" class="fa-facebook"></a>
+<a href="https://twitter.com/_ALLIEWOLF" class="fa-twitter"></a>
+<a href="https://www.instagram.com/allie_wolf/" class="fa-instagram"></a>
+<a href="https://www.linkedin.com/in/allie-wolf-6a5625132/" class="fa-linkedin"></a>
 </div></td>
         </tr>
     </table>
