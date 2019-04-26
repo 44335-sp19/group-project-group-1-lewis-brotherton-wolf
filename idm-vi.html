@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script type="text/javascript">
            
-            <!--Time-->
+//            <!--Time-->
 			window.setInterval(function(){				
 				var date = new Date();
 				var hours = date.getHours();
@@ -29,7 +29,7 @@
 		</script>
 		<script type="text/javascript">
             
-            <!--Contact-->
+//            <!--Contact-->
 			$(document).ready(function(){
 				$("#firstName").focus(function(){
 					$(this).css("background-color", "#faebd7";
@@ -182,6 +182,9 @@
     </style>
     
 </head>
+	
+<!--ScrollSpy -->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <!--Navigation Bar-->
 <nav class="navbar navbar-default">
@@ -196,15 +199,12 @@
       <li><a href="#">IDM: New Media</a></li>
       </ul>
     </div> 
-</nav>        
-<!--ScrollSpy -->
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+</nav>       
 
 <!--ScrollSpyNavBar-->    
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">    
     <h3 class= "navScrollSpy"></h3>
-      <div class="jumbotron">
-      <a href="#section1"><button type="button" class="btn">About Allie</button></a>      
+      <div class="jumbotron">      
       <a href="#section2"><button type="button" class="btn">Experience</button></a>
       <a href="#section3"><button type="button" class="btn">Skills</button></a>
       <a href="#section4"><button type="button" class="btn">Education</button></a>
@@ -214,14 +214,12 @@
     </nav>
     
 <!--AboutAllie-->
-    <div id="section1">
-    <h1>About Allie</h1>
     <table id="tableTwo">
     <tr>
         <td><p>Hello, I'm Allie! I am a twenty-one year old Junior at Northwest Missouri State University. I'm an Interactive Digital Media: Visual Imaging major aspiring to become a User Interface Designer after I graduate in May 2020. I love running, hiking, reading a good book, and taking care of my many house plants.</p></td>
         <td><img src="images/alliepic.jpg" class="rounded-circle" alt="Picture of Allie"></td>
         </tr>
-    </table></div>
+        </table></div>
 
 <!-- Section 2 -->
 <div id="section2">
@@ -252,7 +250,7 @@
     <li>Called alumni and updated personal information, informed about recent events and activities on campus, and made them feel like and essential part of campus.</li>
             </ul></td>        
         </tr>
-    </table>
+    </table></div>
     
 <!-- Section 3 -->
 <div id="section3">
@@ -262,7 +260,7 @@
         <td><h2>Technological Skills</h2></td>
         <td>Microsoft Suites, Adobe InDesign, Adobe Photoshop, Adobe Illistrator, Adobe Spark, Wireframing, HTML, CSS, JavaScript, jQuery, Slack, GitHub and Cloud 9</td>
         </tr>
-    </table>
+    </table></div>
  
     <!-- Section 4 -->
 <div id="section4">
@@ -273,7 +271,7 @@
         <td><h2>Northwest Missouri State University</h2></td>
         <td>800 University Drive Maryville, MO 64468<br>Bachelor in Science of Interactive Digital Media: Visual Imaging<br>Expected Graduation Date: May 2020</td>
         </tr>
-    </table>
+    </table></div>
        <!-- Section 5 -->
 <div id="section5">
   <h1>References</h1>
@@ -286,7 +284,7 @@
         <td><h2>Starr Foote</h2><br></td>
     <td>Supervisor at Buffalo Wild Wings<br>712.366.0067</td>
     </tr>
-    </table>
+    </table></div>
            <!-- Section 6 -->
 <div id="section6">
   <h1>Projects & Designs</h1>
@@ -311,7 +309,6 @@
     <h1>Lets get in touch!</h1><br>
     
     <p class="paragraph">Feel free to reach out if you have any questions, comments, or concerns.</p>
-    	<body>
 		<div id = "container">
 			<form>
 				<h3>First Name </h3> <input id="firstName" type="text">
@@ -323,18 +320,15 @@
 				<button id="submit">Submit</button>
 				<button id="reset">Reset</button>
 			</form>
-		</div>
-            
-		<br><br><br>
-	</body>
-    
+		</div>            
+		<br><br><br>    
 <footer>
     <table class= "stonewall">
     <tr>
         <td><a href="https://www.facebook.com/allie.wolf.581" class="fa fa-facebook"></a>
-<a href="https://twitter.com/_ALLIEWOLF" class="fa fa-twitter"></a>
-        <a href="https://www.linkedin.com/in/allie-wolf-6a5625132/" class="fa fa-linkedin"></a>
-<a href="https://www.instagram.com/allie_wolf/" class="fa fa-instagram"></a></td>
+			<a href="https://twitter.com/_ALLIEWOLF" class="fa fa-twitter"></a>
+        	<a href="https://www.linkedin.com/in/allie-wolf-6a5625132/" class="fa fa-linkedin"></a>
+			<a href="https://www.instagram.com/allie_wolf/" class="fa fa-instagram"></a></td>
         <td><!--Time-->
             <div id="time">
 			<h1 id="digitalClock"></h1>
@@ -343,7 +337,6 @@
         </tr>
     </table>
        
-    
 </footer>
-
+	</div></body>
 </html>
