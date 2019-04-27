@@ -2,7 +2,7 @@
     
 <head>
     
-<title>Group 1: Home</title>    
+<title>Group 1: Addi's Page</title>    
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -77,8 +77,13 @@
              $("#vis6").addClass("btnText");
          }
   });
+
+  var d = new Date();
+document.getElementById("date").innerHTML = d.getDate();
      
-});
+     });  
+     
+
     </script>
     
     <style>
@@ -121,6 +126,7 @@
             text-decoration: underline;
         }
         
+        
     </style>
     
 </head>
@@ -157,7 +163,7 @@
 </div>
    
 <!--About Me Info-->
-<div id="vis1" class="btnText">
+<div id="vis1" class="">
 <h3 class="pad underline">Hello, My Name is Adalida Lewis!</h3>
 <br><br>
     <table>
@@ -308,14 +314,17 @@
 </div>
     
 </div>
+   
     
 
-    
+<p>Today's Date is: </p>
 
+    <p id="date"></p>
 
     
 <footer> 
   <div>Contact Adalida Lewis: <a href="mailto:adalidalewis@gmail.com">adalidalewis@gmail.com</a></div>
+
 </footer>
 </body>
 
